@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <!-- RecyclerView to display chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutMessages"
+        android:padding="8dp"/>
+
+    <!-- Layout for message input -->
+    <RelativeLayout
+        android:id="@+id/layoutMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="8dp">
+        <EditText
+            android:id="@+id/edit_text_message1"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_toStartOf="@id/btn_send1"
+            android:hint="Type your message..."
+            android:inputType="textMultiLine"
+            android:maxLines="5" />
+
+        <Button
+            android:id="@+id/btn_send1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#0888ED"/>
+
+        <ImageButton
+            android:id="@+id/btn_media1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/btn_send1"
+            android:src="@drawable/baseline_attach_file_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

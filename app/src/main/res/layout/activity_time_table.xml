@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TimeTable">
+
+    <!-- First Row of Boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week1img"
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:padding="4dp"
+                android:src="@drawable/arun" />
+
+            <TextView
+                android:id="@+id/week1name"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Arun"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="122dp"
+                android:layout_height="47dp"
+                android:layout_below="@id/week1name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="-58dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/week1img"
+                android:text="Monday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <!-- Box 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week2img"
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:padding="4dp"
+                android:src="@drawable/chary" />
+
+            <TextView
+                android:id="@+id/week2name"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Chary"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="154dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/week2name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="-70dp"
+                android:layout_marginBottom="9dp"
+                android:layout_toStartOf="@+id/week2img"
+                android:text="Tuesday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <!-- Add more boxes (Box 3 to Box 7) similarly -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Box 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week3img"
+                android:layout_width="55dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="9dp"
+                android:padding="4dp"
+                android:src="@drawable/arun" />
+
+            <ImageView
+                android:id="@+id/week3img2"
+                android:layout_width="55dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="60dp"
+                android:padding="4dp"
+                android:src="@drawable/venu_img" />
+
+            <TextView
+                android:id="@+id/week3name"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="Arun\nVenu"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="165dp"
+                android:layout_height="42dp"
+                android:layout_below="@id/week3name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="-64dp"
+                android:layout_marginBottom="18dp"
+                android:layout_toStartOf="@+id/week3img"
+                android:text="Wednesday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week4img"
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:padding="4dp"
+                android:src="@drawable/naveed" />
+
+            <TextView
+                android:id="@+id/week4name"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Naveed"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="137dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/week4name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="-64dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toStartOf="@+id/week4img"
+                android:text="Thursday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <!-- Add more boxes (Box 3 to Box 7) similarly -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week5img"
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:padding="4dp"
+                android:src="@drawable/gani" />
+
+            <TextView
+                android:id="@+id/week5name"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Ganesh"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_width="141dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/week5name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="-66dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toStartOf="@+id/week5img"
+                android:text="Friday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <!-- Box 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week6img"
+                android:layout_width="88dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="0dp"
+                android:padding="4dp"
+                android:src="@drawable/venu_img" />
+
+            <TextView
+                android:id="@+id/week6name"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Venu"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day6"
+                android:layout_width="136dp"
+                android:layout_height="54dp"
+                android:layout_below="@id/week6name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="-57dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toStartOf="@+id/week6img"
+                android:text="Saturday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <!-- Add more boxes (Box 3 to Box 7) similarly -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="187dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/shiny_folding_background"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week7img"
+                android:layout_width="55dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="1dp"
+                android:padding="4dp"
+                android:src="@drawable/chary" />
+
+            <ImageView
+                android:id="@+id/week7img2"
+                android:layout_width="55dp"
+                android:layout_height="69dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="71dp"
+                android:layout_marginEnd="2dp"
+                android:padding="4dp"
+                android:src="@drawable/naveed" />
+
+            <TextView
+                android:id="@+id/week7name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chary\nNaveed"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day7"
+                android:layout_width="108dp"
+                android:layout_height="49dp"
+                android:layout_below="@id/week7name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-25dp"
+                android:layout_marginBottom="22dp"
+                android:layout_toStartOf="@+id/week7img"
+                android:text="Sunday"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

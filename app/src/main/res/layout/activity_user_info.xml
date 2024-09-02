@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userinfo_bg"
+    tools:context=".UserInfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gani"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nameid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganesh"
+        android:textColor="#292B37"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="388dp"
+        android:layout_height="92dp"
+        android:gravity="center_horizontal"
+        android:text="I'm a positive person. I love to travel and eat.\n\t\t\t\t\t\t\t\t\t Always available for chat."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="131dp"
+        android:layout_height="23dp"
+        android:text=" @kotthakontodu"
+        android:textColor="#5A5454"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/amountid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Amount Pending"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <TextView
+        android:id="@+id/amountValue"
+        android:layout_width="89dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <ImageView
+        android:id="@+id/editAmount"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/sharp_edit_note_24"
+        android:contentDescription="Edit Amount"
+        app:layout_constraintBottom_toBottomOf="@+id/amountValue"
+        app:layout_constraintStart_toEndOf="@+id/amountValue"
+        app:layout_constraintTop_toTopOf="@+id/amountValue"
+         />
+
+    <TextView
+        android:id="@+id/pendingid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settelement Pending"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/pendingValue"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <ImageView
+        android:id="@+id/editPending"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="Edit Pending"
+        android:src="@drawable/sharp_edit_note_24"
+        app:layout_constraintBottom_toBottomOf="@+id/pendingValue"
+        app:layout_constraintStart_toEndOf="@+id/pendingValue"
+        app:layout_constraintTop_toTopOf="@+id/pendingValue" />
+
+    <Button
+        android:id="@+id/advancesettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Advance Settings"
+        android:visibility="invisible"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
